@@ -11,7 +11,7 @@ import java.util.Date;
 @NoArgsConstructor
 public class Student {
 
-    private int id;
+    private Integer id;
 
     private String name;
 

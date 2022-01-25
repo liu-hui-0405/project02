@@ -1,4 +1,4 @@
-package com.annotation;
+package com.annotation.test1;
 
 import java.lang.annotation.*;
 

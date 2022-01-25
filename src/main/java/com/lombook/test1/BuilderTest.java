@@ -1,4 +1,4 @@
-package com.lombook;
+package com.lombook.test1;
 
 public class BuilderTest {
     public static void main(String[] args) {

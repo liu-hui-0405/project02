@@ -1,4 +1,4 @@
-package com.reflection;
+package com.reflection.test1;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -16,7 +16,7 @@ import java.lang.reflect.Type;
  */
 public class MethodTest {
     public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
-        Class<?> aClass = Class.forName("com.reflection.TestBase");
+        Class<?> aClass = Class.forName("com.reflection.test1.TestBase");
         TestBase testBase = (TestBase) aClass.newInstance();
         Method say3 = aClass.getDeclaredMethod("say3", String.class, int.class);
         System.out.println("修饰符: " + Modifier.toString(say3.getModifiers()));

@@ -1,11 +1,11 @@
-package com.annotation;
+package com.annotation.test1;
 
 
 import java.lang.reflect.Method;
 
 public class TestAnnotation {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException {
-        Class stuClass = Class.forName("com.annotation.Student");
+        Class stuClass = Class.forName("com.annotation.test1.Student");
         Method stuMethod = stuClass.getMethod("study", int.class);
         if (stuMethod.isAnnotationPresent(CherryAnnotation.class)){
             System.out.println("Student类上配置了CherryAnnotation注解！");

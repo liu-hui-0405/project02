@@ -1,4 +1,4 @@
-package com.lombook;
+package com.lombook.test1;
 
 import lombok.*;
 

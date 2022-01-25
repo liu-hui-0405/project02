@@ -1,4 +1,4 @@
-package com.reflection;
+package com.reflection.test1;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -18,7 +18,7 @@ public class FieldTest {
 
         System.out.println("--------------invoke()--------------");
         //java.lang.reflect.Method.invoke() 方法来反射调用一个方法，当然一般只用于正常情况下无法直接访问的方法（比如：private 的方法，或者无法或者该类的对象）。
-        Class<?> aClass = Class.forName("com.reflection.TestBase");
+        Class<?> aClass = Class.forName("com.reflection.test1.TestBase");
         TestBase testBase = (TestBase) aClass.newInstance();
         Method m = testBase.getClass().getDeclaredMethod("say");
         System.out.println(m.invoke(testBase));

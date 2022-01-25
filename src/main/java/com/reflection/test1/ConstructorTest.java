@@ -1,4 +1,4 @@
-package com.reflection;
+package com.reflection.test1;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -14,7 +14,7 @@ import java.lang.reflect.InvocationTargetException;
  */
 public class ConstructorTest {
     public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
-        Class<?> aClass = Class.forName("com.reflection.TestBase");
+        Class<?> aClass = Class.forName("com.reflection.test1.TestBase");
 
         Constructor<?> constructor2 = aClass.getConstructor();
         System.out.println(constructor2);

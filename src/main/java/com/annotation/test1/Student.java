@@ -1,4 +1,4 @@
-package com.annotation;
+package com.annotation.test1;
 
 public class Student {
 
